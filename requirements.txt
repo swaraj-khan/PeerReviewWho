@@ -1,0 +1,9 @@
+google-generativeai
+python-dotenv
+requests
+pydantic
+fastapi
+uvicorn
+feedparser
+rich
+pylatex
