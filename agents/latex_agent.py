@@ -28,7 +28,7 @@ class LatexAgent:
             if markdown_table:
                 lines = [l.strip() for l in markdown_table.strip().split('\n') if l.strip()]
                 if len(lines) < 2 or '---' not in lines[1]:
-                    doc.append(NoEscape(markdown_table)) # Append as plain text if not a valid table
+                    doc.append(NoEscape(markdown_table)) 
                     continue
                 
                 header = [h.strip() for h in lines[0].strip('|').split('|')]
@@ -110,7 +110,5 @@ class LatexAgent:
             doc.generate_pdf(filename, clean_tex=False)
             return f"{filename}.pdf"
         except Exception as e:
-            print(f"\n[bold red]Warning:[/bold red] PDF generation failed. This usually means a LaTeX distribution (like MiKTeX, TeX Live, or MacTeX) is not installed or not in your system's PATH. The `.tex` file has been saved instead.")
-            print(f"Error details: {e}")
             doc.generate_tex(filename)
             return f"{filename}.tex"
