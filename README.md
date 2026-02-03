@@ -3,6 +3,11 @@
 Research-Agent is a modular Python system for generating and assembling structured research papers using specialized agents.  
 Each agent is responsible for a distinct section or responsibility in the paper generation pipeline, coordinated through a central orchestrator and shared memory.
 
+<img width="1487" height="207" alt="image" src="https://github.com/user-attachments/assets/2912f785-b0d3-44d5-92a3-45c57e9b827a" />
+
+<img width="1486" height="266" alt="image" src="https://github.com/user-attachments/assets/f77efc92-cf99-43ed-a9c5-39a65bb7399b" />
+
+
 ---
 
 ## Project Structure
@@ -120,5 +125,10 @@ python main.py
 ```
 ## Output
 
+<img width="1862" height="787" alt="image" src="https://github.com/user-attachments/assets/82e78994-2cab-4448-9e39-6dec7f484f29" />
+
 - Generates a structured research paper.
 - Produces a LaTeX file (`research_paper.tex`) ready for compilation.
+- Copy and paste the latex text into https://www.overleaf.com/ to get the pdf. In there you can do whatever the edits you have in mind !
+
+See ya
